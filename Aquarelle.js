@@ -354,7 +354,7 @@ var THREE = window.THREE || {};
 			item.render(deltaTime / 1000);
 		});
 
-		requestAnimationFrame(frame);
+		Aquarelle.animationFrame = requestAnimationFrame(frame);
 	}
 	frame();
 
