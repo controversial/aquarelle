@@ -143,10 +143,10 @@ THREE.AquarellePass = function(texture, mask) {
             'vec2 shift = vUv;',
 
             'float largeNoise = snoise(vec3(vUv * 20.0, 0));',
-            'shift += vec2(cos(largeNoise), sin(largeNoise)) * .07;',
+            'shift += (cos(largeNoise), sin(largeNoise)) * .07;',
 
             'float smallNoise = snoise(vec3(vUv * 70.0, 0));',
-            'shift += vec2(cos(smallNoise), sin(smallNoise)) * .02;',
+            'shift += (cos(smallNoise), sin(smallNoise)) * .02;',
 
             'vec4 mask = texture2D(Mask, shift);',
 
